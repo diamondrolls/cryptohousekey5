@@ -192,20 +192,21 @@ font-color:#ffffff;
 position:relevant;
 }
 
+
 .cube{
-        left:200px;   
+        left:300px;   
         top:400px;
-        position: absolute;
-	width:500px;
-	height:500px;
+        position: relative;
+	width:350px;
+	height:620px;
         transform-style:preserve-3d;
-        transform: rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
+        transform: rotateY(-100deg) rotateX(70deg) rotateZ(605deg);
        animation:money 13s infinite ;
        -webkit-animation: money 13s infinite;/* Safari 4.0 - 8.0 */
 }
  
 
-}
+
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes money{
  0% { transform:rotateY(0deg);}
@@ -228,50 +229,51 @@ position:relevant;
   position: absolute;
   border-style:outset;
        border-color:rgb(255, 255, 255);
+  background-color:rgb(255, 215, 0, .5);
 }
 
 .top {
-  transform: translateZ(-315px);
+  transform: translateZ(-115px);
   transform: rotateY(10deg)
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(255, 215, 0, .5);
 	border-style:outset;
        border-color:rgb(255, 255, 255);
 }
 
 .back {
-  transform: translateZ(-315px);
+  transform: translateZ(-115px);
   transform: rotateX(90deg);
   transform-origin: center;
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(255, 215, 0, .5);
 	border-style:outset;
        border-color:rgb(255, 255, 255);
 }
   
 .front {
-  transform: translateZ(190px);
+  transform: translateZ(245px);
   position:absolute;
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(255, 215, 0, .5);
 	border-style:outset;
        border-color:rgb(255, 255, 255);
 }
 
 .frontdoor {
-  height:210px;
-  width:150px;
+  height:110px;
+  width:50px;
   bottom:0%;
-  left:150px;
-  transform: translateZ(192px);
+  left:70px;
+  transform: translateZ(250px);
   position:absolute;
   background-color:rgb(255, 255, 255);
 	border-style:outset;
        border-color:rgb(255, 215, 0);
 }
 .frontwindow {
-  height:100px;
-  width:50px;
+  height:50px;
+  width:25px;
   top:50px;
   left:100px;
-  transform: translateZ(192px);
+  transform: translateZ(250px);
   position:relative;
    background-color:rgb(255, 255, 255, .5);
 	border-style:inset;
@@ -279,11 +281,11 @@ position:relevant;
 }
 
 .frontwindow2 {
-  height:100px;
-  width:50px;
+  height:50px;
+  width:25px;
   bottom:50px;
   left:50px;
-  transform: translateZ(192px);
+  transform: translateZ(250px);
   position:absolute;
    background-color:rgb(255, 255, 255, .5);
 	border-style:inset;
@@ -291,11 +293,11 @@ position:relevant;
 }
 
 .frontwindow3 {
-  height:100px;
-  width:50px;
+  height:50px;
+  width:25px;
   top:50px;
   right:100px;
-  transform: translateZ(192px);
+  transform: translateZ(250px);
   position:absolute;
    background-color:rgb(255, 255, 255, .5);
 	border-style:inset;
@@ -303,47 +305,62 @@ position:relevant;
 }
 
 .frontwindow4 {
-  height:100px;
-  width:50px;
+  height:50px;
+  width:25px;
   bottom:50px;
   right:50px;
-  transform: translateZ(192px);
+  transform: translateZ(250px);
   position:absolute;
    background-color:rgb(255, 255, 255, .5);
 	border-style:inset;
             border-color:rgba(255, 215, 0);
 }
+.frontview {
+    transform-style:preserve-3d;
+    height:150px;
+  width:300px;
+  top:200px;
+  position:absolute;
+  left:25px;
+  transform: translateZ(250px);
+  background-color:rgb(255, 255, 255, .5);
+  border-style:outset;
+   border-color:rgb(255, 255, 255);
+}
 
 .left {
   width: 100%;
-  transform: translateZ(-315px) rotateY(90deg);
+  transform: translateZ(-115px) rotateY(90deg);
   transform-origin: right;
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(255, 215, 50, .8);
   border-style:outset;
        border-color:rgb(255, 255, 255);
 }	
+.leftgarage {
+    transform-style:preserve-3d;
+    height:150px;
+  width:300px;
+  top:476px;
+  position:relative;
+  left:25px;
+  transform: translateZ(-118px) rotateY(97deg);
+  transform-origin: right;
+  background-color:rgb(255, 255, 255, 1);
+  border-style:outset;
+   border-color:rgb(255, 0, 0);
+  animation: alotofmoney 13s infinite ;
+       -webkit-animation: alotofmoney 13s infinite;/* Safari 4.0 - 8.0 */
+}
+	
 
 .right {
   width: 100%;
-  transform: translateZ(-315px) rotateY(-90deg);
+  transform: translateZ(-115px) rotateY(-90deg);
   transform-origin: left;
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(255, 215, 0, .5);
   border-style:outset;
        border-color:rgb(255, 255, 255);
-}	
-
-	/* Safari 4.0 - 8.0 */
-@-webkit-keyframes alotofmoney{
- 0% { right:0%;}
-100% { right:100%;}
-
 }
-		  
-@keyframes  alotofmoney{
- 0% { right:0%;}
-100% { right:100%;}
-
-}  
 		   ul {
 	   top:15%;
          float:left;
